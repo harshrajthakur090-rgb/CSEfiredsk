@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Incidents | FireDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🔥 FireDesk <span>Fire Station Incident Management System</span></div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="report.html">Report Incident</a>
+      <a href="incidents.html" class="active">Incidents</a>
+      <a href="dispatch.html">Dispatch</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="crew.html">Crew</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="page-title">
+      <h1>Active Incidents</h1>
+      <p>All incidents that are not yet resolved, with severity, location and assigned units.</p>
+    </div>
+
+    <!-- Severity legend -->
+    <div class="box">
+      <h2>Severity Guide</h2>
+      <p>
+        <span class="badge critical">Critical</span> Life in danger, 3+ vehicles &nbsp;
+        <span class="badge high">High</span> 2 vehicles &nbsp;
+        <span class="badge medium">Medium</span> 1 vehicle &nbsp;
+        <span class="badge low">Low</span> Inspection only
+      </p>
+    </div>
+
+    <!-- Incidents table -->
+    <div class="box">
+      <h2>Incident List</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Reported At</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Severity</th>
+            <th>Vehicles</th>
+            <th>Crew</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>INC-1026</td>
+            <td>25 Nov, 20:31</td>
+            <td>Gas Leak</td>
+            <td>Sector 7 Housing Colony<br><small>Zone C</small></td>
+            <td><span class="badge medium">Medium</span></td>
+            <td>Not assigned</td>
+            <td>Not assigned</td>
+            <td><span class="badge reported">Reported</span></td>
+          </tr>
+          <tr>
+            <td>INC-1025</td>
+            <td>25 Nov, 19:48</td>
+            <td>Building Fire</td>
+            <td>Gandhi Market Complex<br><small>Zone A</small></td>
+            <td><span class="badge critical">Critical</span></td>
+            <td>FE-01, WT-01</td>
+            <td>Team Alpha</td>
+            <td><span class="badge onscene">On Scene</span></td>
+          </tr>
+          <tr>
+            <td>INC-1024</td>
+            <td>25 Nov, 20:12</td>
+            <td>High-rise Rescue</td>
+            <td>Skyline Apartments, Tower B<br><small>Zone C</small></td>
+            <td><span class="badge high">High</span></td>
+            <td>LT-01</td>
+            <td>Team Bravo</td>
+            <td><span class="badge enroute">En Route</span></td>
+          </tr>
+          <tr>
+            <td>INC-1023</td>
+            <td>25 Nov, 20:20</td>
+            <td>Vehicle Fire</td>
+            <td>NH-31, near Toll Plaza<br><small>Zone D</small></td>
+            <td><span class="badge medium">Medium</span></td>
+            <td>FE-03</td>
+            <td>Team Charlie</td>
+            <td><span class="badge dispatched">Dispatched</span></td>
+          </tr>
+          <tr>
+            <td>INC-1022</td>
+            <td>25 Nov, 19:05</td>
+            <td>Person Trapped (Well)</td>
+            <td>Railway Colony<br><small>Zone B</small></td>
+            <td><span class="badge high">High</span></td>
+            <td>RV-01</td>
+            <td>Team Delta</td>
+            <td><span class="badge onscene">On Scene</span></td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <a href="dispatch.html" class="btn">Go to Dispatch</a>
+      <a href="report.html" class="btn grey">Report New Incident</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 FireDesk &middot; Fire Station Incident Management System &middot; CSE326 CA1 Project</p>
+  </footer>
+
+</body>
+</html>

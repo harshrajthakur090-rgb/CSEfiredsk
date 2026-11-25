@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dispatch | FireDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🔥 FireDesk <span>Fire Station Incident Management System</span></div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="report.html">Report Incident</a>
+      <a href="incidents.html">Incidents</a>
+      <a href="dispatch.html" class="active">Dispatch</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="crew.html">Crew</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="page-title">
+      <h1>Dispatch Centre</h1>
+      <p>Assign available vehicles and crew to an incident, and track dispatch status.</p>
+    </div>
+
+    <!-- Dispatch form: only AVAILABLE vehicles and crew are listed -->
+    <form class="box" action="success.html" method="get">
+      <h2>Assign Resources</h2>
+
+      <div class="form-group">
+        <label for="incident">Incident (waiting for dispatch)</label>
+        <select id="incident" name="incident" required>
+          <option value="">-- Select incident --</option>
+          <option>INC-1026 &middot; Gas Leak &middot; Sector 7 Housing Colony (Medium)</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="vehicle">Available Vehicle</label>
+          <select id="vehicle" name="vehicle" required>
+            <option value="">-- Select vehicle --</option>
+            <option>FE-02 &middot; Fire Engine</option>
+            <option>WT-02 &middot; Water Tanker</option>
+            <option>AMB-01 &middot; Ambulance</option>
+            <option>QRV-01 &middot; Quick Response Vehicle</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="crew">Available Crew Team</label>
+          <select id="crew" name="crew" required>
+            <option value="">-- Select crew --</option>
+            <option>Team Echo (5 members, Leader: Manoj Verma)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Instructions for Crew</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="e.g. Shut main gas valve, evacuate Block C"></textarea>
+      </div>
+
+      <button type="submit" class="btn">🚒 Dispatch Now</button>
+    </form>
+
+    <!-- Dispatch status tracker for each active incident -->
+    <div class="box">
+      <h2>Dispatch Status Tracker</h2>
+
+      <div class="tracker">
+        <h3>INC-1026 &middot; Gas Leak &middot; <span class="badge medium">Medium</span></h3>
+        <ul class="steps">
+          <li class="current">Reported</li>
+          <li>Dispatched</li>
+          <li>En Route</li>
+          <li>On Scene</li>
+          <li>Resolved</li>
+        </ul>
+      </div>
+
+      <div class="tracker">
+        <h3>INC-1023 &middot; Vehicle Fire &middot; FE-03 + Team Charlie</h3>
+        <ul class="steps">
+          <li class="done">Reported</li>
+          <li class="current">Dispatched</li>
+          <li>En Route</li>
+          <li>On Scene</li>
+          <li>Resolved</li>
+        </ul>
+      </div>
+
+      <div class="tracker">
+        <h3>INC-1024 &middot; High-rise Rescue &middot; LT-01 + Team Bravo</h3>
+        <ul class="steps">
+          <li class="done">Reported</li>
+          <li class="done">Dispatched</li>
+          <li class="current">En Route</li>
+          <li>On Scene</li>
+          <li>Resolved</li>
+        </ul>
+      </div>
+
+      <div class="tracker">
+        <h3>INC-1025 &middot; Building Fire &middot; FE-01, WT-01 + Team Alpha</h3>
+        <ul class="steps">
+          <li class="done">Reported</li>
+          <li class="done">Dispatched</li>
+          <li class="done">En Route</li>
+          <li class="current">On Scene</li>
+          <li>Resolved</li>
+        </ul>
+      </div>
+
+      <div class="tracker">
+        <h3>INC-1022 &middot; Person Trapped (Well) &middot; RV-01 + Team Delta</h3>
+        <ul class="steps">
+          <li class="done">Reported</li>
+          <li class="done">Dispatched</li>
+          <li class="done">En Route</li>
+          <li class="current">On Scene</li>
+          <li>Resolved</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 FireDesk &middot; Fire Station Incident Management System &middot; CSE326 CA1 Project</p>
+  </footer>
+
+</body>
+</html>

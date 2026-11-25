@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crew | FireDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🔥 FireDesk <span>Fire Station Incident Management System</span></div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="report.html">Report Incident</a>
+      <a href="incidents.html">Incidents</a>
+      <a href="dispatch.html">Dispatch</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="crew.html" class="active">Crew</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="page-title">
+      <h1>Crew Assignment</h1>
+      <p>Response teams, their shift and current assignment.</p>
+    </div>
+
+    <!-- Crew teams table -->
+    <div class="box">
+      <h2>Response Teams</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Team</th>
+            <th>Team Leader</th>
+            <th>Members</th>
+            <th>Speciality</th>
+            <th>Shift</th>
+            <th>Assigned To</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Alpha</td>
+            <td>Rajesh Kumar</td>
+            <td>6</td>
+            <td>Building fires</td>
+            <td>Day (8 AM - 8 PM)</td>
+            <td>INC-1025</td>
+            <td><span class="badge busy">On Duty</span></td>
+          </tr>
+          <tr>
+            <td>Bravo</td>
+            <td>Suresh Yadav</td>
+            <td>5</td>
+            <td>High-rise rescue</td>
+            <td>Day (8 AM - 8 PM)</td>
+            <td>INC-1024</td>
+            <td><span class="badge busy">On Duty</span></td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>Amit Singh</td>
+            <td>5</td>
+            <td>Vehicle &amp; road fires</td>
+            <td>Day (8 AM - 8 PM)</td>
+            <td>INC-1023</td>
+            <td><span class="badge busy">On Duty</span></td>
+          </tr>
+          <tr>
+            <td>Delta</td>
+            <td>Vikram Sharma</td>
+            <td>4</td>
+            <td>Rescue operations</td>
+            <td>Day (8 AM - 8 PM)</td>
+            <td>INC-1022</td>
+            <td><span class="badge busy">On Duty</span></td>
+          </tr>
+          <tr>
+            <td>Echo</td>
+            <td>Manoj Verma</td>
+            <td>5</td>
+            <td>Gas &amp; chemical hazards</td>
+            <td>Night (8 PM - 8 AM)</td>
+            <td>-</td>
+            <td><span class="badge available">Available</span></td>
+          </tr>
+          <tr>
+            <td>Foxtrot</td>
+            <td>Deepak Mishra</td>
+            <td>6</td>
+            <td>Building fires</td>
+            <td>Night (8 PM - 8 AM)</td>
+            <td>-</td>
+            <td><span class="badge offduty">Off Duty</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Form to add a new crew member -->
+    <form class="box" action="success.html" method="get">
+      <h2>Add Crew Member</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="rank">Rank</label>
+          <select id="rank" name="rank" required>
+            <option value="">-- Select rank --</option>
+            <option>Station Officer</option>
+            <option>Leading Fireman</option>
+            <option>Fireman</option>
+            <option>Driver Operator</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="team">Team</label>
+          <select id="team" name="team" required>
+            <option value="">-- Select team --</option>
+            <option>Alpha</option>
+            <option>Bravo</option>
+            <option>Charlie</option>
+            <option>Delta</option>
+            <option>Echo</option>
+            <option>Foxtrot</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Number</label>
+          <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required>
+        </div>
+      </div>
+      <button type="submit" class="btn">Add Member</button>
+    </form>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 FireDesk &middot; Fire Station Incident Management System &middot; CSE326 CA1 Project</p>
+  </footer>
+
+</body>
+</html>

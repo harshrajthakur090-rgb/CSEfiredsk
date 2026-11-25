@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicles | FireDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🔥 FireDesk <span>Fire Station Incident Management System</span></div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="report.html">Report Incident</a>
+      <a href="incidents.html">Incidents</a>
+      <a href="dispatch.html">Dispatch</a>
+      <a href="vehicles.html" class="active">Vehicles</a>
+      <a href="crew.html">Crew</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="page-title">
+      <h1>Vehicle Availability</h1>
+      <p>Fleet of Central Fire Station &middot; 4 Available &middot; 5 On Duty &middot; 1 Under Maintenance</p>
+    </div>
+
+    <!-- Each vehicle is one card.
+         Border colour: green = available, red = on duty, grey = maintenance -->
+    <div class="vehicle-grid">
+
+      <div class="vehicle on-duty">
+        <div class="icon">🚒</div>
+        <h3>FE-01</h3>
+        <p>Fire Engine &middot; 4500 L water</p>
+        <p>Assigned to: INC-1025</p>
+        <span class="badge busy">On Duty</span>
+      </div>
+
+      <div class="vehicle">
+        <div class="icon">🚒</div>
+        <h3>FE-02</h3>
+        <p>Fire Engine &middot; 4500 L water</p>
+        <p>Parked at: Bay 2</p>
+        <span class="badge available">Available</span>
+      </div>
+
+      <div class="vehicle on-duty">
+        <div class="icon">🚒</div>
+        <h3>FE-03</h3>
+        <p>Fire Engine &middot; 3000 L water</p>
+        <p>Assigned to: INC-1023</p>
+        <span class="badge busy">On Duty</span>
+      </div>
+
+      <div class="vehicle on-duty">
+        <div class="icon">🚛</div>
+        <h3>WT-01</h3>
+        <p>Water Tanker &middot; 12000 L</p>
+        <p>Assigned to: INC-1025</p>
+        <span class="badge busy">On Duty</span>
+      </div>
+
+      <div class="vehicle">
+        <div class="icon">🚛</div>
+        <h3>WT-02</h3>
+        <p>Water Tanker &middot; 12000 L</p>
+        <p>Parked at: Bay 5</p>
+        <span class="badge available">Available</span>
+      </div>
+
+      <div class="vehicle on-duty">
+        <div class="icon">🪜</div>
+        <h3>LT-01</h3>
+        <p>Ladder Truck &middot; 32 m ladder</p>
+        <p>Assigned to: INC-1024</p>
+        <span class="badge busy">On Duty</span>
+      </div>
+
+      <div class="vehicle on-duty">
+        <div class="icon">🚐</div>
+        <h3>RV-01</h3>
+        <p>Rescue Van &middot; Cutting &amp; lifting tools</p>
+        <p>Assigned to: INC-1022</p>
+        <span class="badge busy">On Duty</span>
+      </div>
+
+      <div class="vehicle">
+        <div class="icon">🚑</div>
+        <h3>AMB-01</h3>
+        <p>Ambulance &middot; Basic life support</p>
+        <p>Parked at: Bay 8</p>
+        <span class="badge available">Available</span>
+      </div>
+
+      <div class="vehicle repair">
+        <div class="icon">🚑</div>
+        <h3>AMB-02</h3>
+        <p>Ambulance &middot; Basic life support</p>
+        <p>Brake repair, back on 27 Nov</p>
+        <span class="badge maintenance">Maintenance</span>
+      </div>
+
+      <div class="vehicle">
+        <div class="icon">🏍️</div>
+        <h3>QRV-01</h3>
+        <p>Quick Response Bike &middot; Fire extinguishers</p>
+        <p>Parked at: Bay 1</p>
+        <span class="badge available">Available</span>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 FireDesk &middot; Fire Station Incident Management System &middot; CSE326 CA1 Project</p>
+  </footer>
+
+</body>
+</html>

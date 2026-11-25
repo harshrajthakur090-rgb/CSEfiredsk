@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | FireDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header with logo and menu (same on every page) -->
+  <header class="header">
+    <div class="logo">🔥 FireDesk <span>Fire Station Incident Management System</span></div>
+    <nav class="nav">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="report.html">Report Incident</a>
+      <a href="incidents.html">Incidents</a>
+      <a href="dispatch.html">Dispatch</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="crew.html">Crew</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Page heading -->
+    <div class="page-title">
+      <h1>Control Room Dashboard</h1>
+      <p>Central Fire Station &middot; Live overview of incidents, vehicles and crew</p>
+    </div>
+
+    <!-- Emergency banner -->
+    <div class="banner">
+      <div>
+        <h2>New emergency call?</h2>
+        <p>Log the incident first, then dispatch the nearest available unit.</p>
+      </div>
+      <div class="helpline">☎ 101</div>
+      <a href="report.html" class="btn">+ Report Incident</a>
+    </div>
+
+    <!-- Summary cards -->
+    <div class="cards">
+      <div class="card">
+        <h3>Active Incidents</h3>
+        <div class="number">5</div>
+        <p>1 waiting for dispatch</p>
+      </div>
+      <div class="card green">
+        <h3>Vehicles Available</h3>
+        <div class="number">4 / 10</div>
+        <p>5 on duty, 1 in maintenance</p>
+      </div>
+      <div class="card blue">
+        <h3>Crew Teams Free</h3>
+        <div class="number">1 / 6</div>
+        <p>Team Echo on standby</p>
+      </div>
+      <div class="card orange">
+        <h3>Resolved This Month</h3>
+        <div class="number">23</div>
+        <p>Avg. response time 9 min</p>
+      </div>
+    </div>
+
+    <!-- Active incidents table -->
+    <div class="box">
+      <h2>Active Incidents</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Severity</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>INC-1026</td>
+            <td>Gas Leak</td>
+            <td>Sector 7 Housing Colony</td>
+            <td><span class="badge medium">Medium</span></td>
+            <td><span class="badge reported">Reported</span></td>
+          </tr>
+          <tr>
+            <td>INC-1025</td>
+            <td>Building Fire</td>
+            <td>Gandhi Market Complex</td>
+            <td><span class="badge critical">Critical</span></td>
+            <td><span class="badge onscene">On Scene</span></td>
+          </tr>
+          <tr>
+            <td>INC-1024</td>
+            <td>High-rise Rescue</td>
+            <td>Skyline Apartments, Tower B</td>
+            <td><span class="badge high">High</span></td>
+            <td><span class="badge enroute">En Route</span></td>
+          </tr>
+          <tr>
+            <td>INC-1023</td>
+            <td>Vehicle Fire</td>
+            <td>NH-31, near Toll Plaza</td>
+            <td><span class="badge medium">Medium</span></td>
+            <td><span class="badge dispatched">Dispatched</span></td>
+          </tr>
+          <tr>
+            <td>INC-1022</td>
+            <td>Person Trapped (Well)</td>
+            <td>Railway Colony</td>
+            <td><span class="badge high">High</span></td>
+            <td><span class="badge onscene">On Scene</span></td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <a href="incidents.html" class="btn grey">View all incidents</a>
+    </div>
+
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="footer">
+    <p>&copy; 2026 FireDesk &middot; Fire Station Incident Management System &middot; CSE326 CA1 Project</p>
+  </footer>
+
+</body>
+</html>
